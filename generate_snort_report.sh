@@ -94,12 +94,12 @@ done
 cat dailyalerts.txt | sort | uniq -c | sort -n -r | head >> topdailyalerts.txt #top 10 daily alerts w/ count
 cat monthlyalerts.txt | sort | uniq -c | sort -n -r | head >> topmonthlyalerts.txt #top 10 monthly alerts w/ count
 iostat | sed -n '4{p;q}' >> cpu.txt #gets average cpu info
-echo “$(date)”  >> emailalert.txt #puts date on first line of email
-echo “Top Daily Alerts:” >> emailalert.txt #daily alerts title
+echo â€œ$(date)â€  >> emailalert.txt #puts date on first line of email
+echo â€œTop Daily Alerts:â€ >> emailalert.txt #daily alerts title
 cat topdailyalerts.txt >> emailalert.txt
-echo “Top Monthly Alerts:” >> emailalert.txt #monthly alerts title
+echo â€œTop Monthly Alerts:â€ >> emailalert.txt #monthly alerts title
 cat topmonthlyalerts.txt >> emailalert.txt
-echo “Performance:” >> emailalert.txt #performance alerts title
+echo â€œPerformance:â€ >> emailalert.txt #performance alerts title
 cat cpu.txt >> emailalert.txt
 cat emailalert.txt
 ##sed "/^$/d" emailalert.txt | sed G #optional way to format lines
@@ -108,7 +108,7 @@ cat emailalert.txt
 ######Notification (Email/Text)##########
 
 cat emailformat.txt emailalert.txt >> emailalert.txt #adds customized message to format template
-Ssmtp -t < emailalert.txt #send message to email or text
+ssmtp -t < emailalert.txt #send message to email or text
 
 ###########Clearing Files################
 
