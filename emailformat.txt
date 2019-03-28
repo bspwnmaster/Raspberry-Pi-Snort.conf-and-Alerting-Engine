@@ -1,0 +1,3 @@
+To: <receiver@email.com>
+From: Alert Manager <sender@email.com>
+Subject: Security Alerts
