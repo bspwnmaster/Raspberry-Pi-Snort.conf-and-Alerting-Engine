@@ -18,7 +18,7 @@
 
 ############Environmental Updates#############
 
-wget http://standards-oui.ieee.org/oui/oui.txt  #gets updated manufacturer list for oui.txt #only needs to be done once or periodically 
+#wget http://standards-oui.ieee.org/oui/oui.txt  #gets updated manufacturer list for oui.txt #only needs to be done once or periodically 
 #ping -c 6 -b <bip>  #broadcasts ping on network #lightweight alternative to nmap #customize to home network broadcast ip
 #sleep 7 #waits for ping to finish
 
