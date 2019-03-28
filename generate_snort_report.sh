@@ -57,7 +57,7 @@ cat monthlyalerts.txt | cut -d ' ' -f 2- >> monthlyalerts.txt
 cat dailyalerts.txt | sort | uniq -c | sort -n -r | head >> topdailyalerts.txt #top 10 daily alerts w/ count
 cat monthlyalerts.txt | sort | uniq -c | sort -n -r | head >> topmonthlyalerts.txt #top 10 monthly alerts w/ count
 
-dailyalerts.txt now main file to use
+#dailyalerts.txt now main file to use
 
 ###########Manufacturer Resolver###############
 
