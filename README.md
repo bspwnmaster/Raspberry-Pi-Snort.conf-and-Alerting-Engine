@@ -9,5 +9,6 @@ Here's the format to use for popular phone carriers:
 AT&T: number@txt.att.net 
 T-Mobile: number@tmomail.net
 Verizon: number@vtext.com 
-Sprint: number@messaging.sprintpcs.com
+Sprint: number@messaging.sprintpcs.com.
+
 For more information regarding the install or setup - send me a message.
