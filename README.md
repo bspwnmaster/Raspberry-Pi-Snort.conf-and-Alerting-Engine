@@ -1,5 +1,5 @@
 # Raspberry-Pi-Snort.conf-and-Alerting-Engine
-Home router IDS setup with a Raspberry Pi 3. Dynamically resolves device name, manufacturer, and alerts user of Snort analytics through email or text. Currently handles around 15,000 rules.
+Home router IDS setup with a Raspberry Pi 3 and Snort. Dynamically resolves device name, manufacturer, and alerts user of Snort analytics through email or text. Currently handles around 15,000 rules.
 Tested with a Raspberry Pi 3 B, Snort 2.9.7.0 and Raspbian version 2018-11-13.
 Snort.conf file should merely be used as a template. The preprocessor values, lowmem search and 'output alert_csv: /home/pi/Alerting_Engine/alerts.csv timestamp,src,ethsrc,dst,msg' are the important aspects to copy over in your Snort.conf.
 The swap file in Raspbian OS should be increased to better suit Snort's memory requirements (Default value is lower than normal).
